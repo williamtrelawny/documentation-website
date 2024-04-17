@@ -22,6 +22,10 @@ The demo configuration is automatically called as part of the setup for each sup
 
 **Note**: Starting with OpenSearch 2.12, a custom admin password is required in order to install the demo configuration. If none is provided, the cluster will fail to start. Note that this change only affects new clusters. Existing clusters are not affected because they already have `opensearch.yml` configured, so the installation tool will not run. 
 
+**Note**: The admin password must fulfill the following complexity requirements:
+- At least 8 characters long
+- Contain at least one uppercase letter, one lowercase letter, one digit, and one special character
+
 ### Docker
 
 Use the following steps to set up the Security plugin using Docker:
